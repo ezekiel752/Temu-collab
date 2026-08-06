@@ -52,6 +52,10 @@ function Products() {
           <h1 className="text-xl sm:text-2xl font-bold flex items-center gap-2 text-[#FB7701]">
             <FaBoltLightning />
             LIGHTNING DEALS
+            <FaBoltLightning />
+            <FaBoltLightning />
+            <FaBoltLightning />
+
           </h1>
           <h1 className="text-base sm:text-2xl font-bold flex items-center gap-1 text-[#FB7701]">
             Limited-time offers <ChevronRight />
