@@ -32,12 +32,12 @@ function Recipes() {
     )
     }
     return(
-        <div className="">
+        <div className="w-[90%] lg:w-[70%] m-auto py-4">
             <div className=" flex flex-col items-center justify-center gap-2 p-4">
                 <h1 className="font-extrabold text-[#E23722] text-xl">BACK TO SCHOOL SALES</h1>
                 <h1 className="font-extrabold text-black text-xl">EXPLORE YOUR INTERESTS</h1>
             </div>
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 m-4">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {recipes.map((recipe) => (
                 <RecipesCard key={recipe.id} recipe={recipe} />
             ))}

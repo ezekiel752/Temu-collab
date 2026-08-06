@@ -47,23 +47,27 @@ function Products() {
 
 
     return (
-        <div className="">
-            <div className="flex justify-between p-9">
-                <h1 className="text-2xl font-bold flex text-[#E23722] mx-3"><FaBoltLightning />LIGHTNING DEALS</h1>
-                <h1 className="text-2xl font-bold flex text-[#E23722]">Limited-time offers   <ChevronRight /></h1>
-            </div>
-        {products.map((cart) => (
-        <div key={cart.id} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 m-4">
-          {cart.products.map((product) => (
-            <ProductCard 
-            key={product.id} 
-            product={product} />
-            
-          ))}
+      <div className="w-[90%] lg:w-[70%] m-auto py-4">
+        <div className="flex justify-between items-center py-4">
+          <h1 className="text-xl sm:text-2xl font-bold flex items-center gap-2 text-[#FB7701]">
+            <FaBoltLightning />
+            LIGHTNING DEALS
+          </h1>
+          <h1 className="text-base sm:text-2xl font-bold flex items-center gap-1 text-[#FB7701]">
+            Limited-time offers <ChevronRight />
+          </h1>
         </div>
-      ))}
-   
-    </div>
- )
+        {products.map((cart) => (
+          <div
+            key={cart.id}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4"
+          >
+            {cart.products.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        ))}
+      </div>
+    );
 }
 export default Products
