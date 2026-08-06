@@ -22,7 +22,14 @@ function Recipes() {
         }
     }
     if (loading) {
-        return(<div>Loading...</div>)
+        return(
+       <div className="flex justify-center align-middle p-8">
+         <div className="flex justify-center flex-col align-middle p-8">
+            <div className="h-12 w-12 animate-spin rounded-full border-4 border-orange-700 border-t-transparent ml-20"></div>
+            <h2 className="text-lg font-semibold text-gray-700 text-center py-4">Loading Recipes, please wait...</h2>
+        </div>
+       </div>
+    )
     }
     return(
         <div className="">
